@@ -84,7 +84,7 @@ class Motor(object):
 
 	def reference_search( self, rfs_type ):
 		reply = self.send(Command.RFS, rfs_type, self.motor_id, 99)
-		return reply.status
+		return reply.value
 
 
 class AxisParameterInterface(object):
